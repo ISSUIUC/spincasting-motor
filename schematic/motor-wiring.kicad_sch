@@ -7,7 +7,7 @@
 	(title_block
 		(title "Spincasting Motor")
 		(date "2026-09-22")
-		(rev "2")
+		(rev "adf02adc")
 		(company "ISS Hybrid Propulsion @ UIUC")
 	)
 	(lib_symbols
