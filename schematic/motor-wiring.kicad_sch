@@ -2500,8 +2500,8 @@
 		)
 	)
 	(rectangle
-		(start 46.99 79.756)
-		(end 89.408 108.204)
+		(start 40.64 79.756)
+		(end 88.265 108.204)
 		(stroke
 			(width 0.3048)
 			(type solid)
@@ -2535,15 +2535,37 @@
 		)
 		(uuid "c695cccd-3a05-4e37-a4c7-c2c2e8922af0")
 	)
-	(text "MCU (TBD)"
+	(text "(D2)"
 		(exclude_from_sim no)
-		(at 83.566 81.788 0)
+		(at 82.042 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6488b4a0-f693-453e-bd6f-bae9802f041d")
+	)
+	(text "Arduino Nano R4 "
+		(exclude_from_sim no)
+		(at 74.422 82.042 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "67537205-2ef6-4f41-bcd7-a61bdb307e1c")
+	)
+	(text "(D7)"
+		(exclude_from_sim no)
+		(at 82.042 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7c948369-7154-4904-9694-50a497995054")
 	)
 	(text "BLY34"
 		(exclude_from_sim no)
@@ -2555,7 +2577,62 @@
 		)
 		(uuid "7f1c99c1-5cb0-4cc8-be3f-d80f4f718474")
 	)
-	(text "MDC150-050301"
+	(text "(D8)"
+		(exclude_from_sim no)
+		(at 82.042 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8612ee16-246e-427b-a673-b24080f35796")
+	)
+	(text "(GND)"
+		(exclude_from_sim no)
+		(at 81.28 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9744ceed-dc28-4a81-b7ae-e9224ba9763f")
+	)
+	(text "(D6)"
+		(exclude_from_sim no)
+		(at 82.042 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "af15f74a-ad8a-4655-8bc9-4b8b29cb838d")
+	)
+	(text "(D9)"
+		(exclude_from_sim no)
+		(at 82.042 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b9cb761d-f28e-4455-9669-02c7b782b48e")
+	)
+	(text "(D4)"
+		(exclude_from_sim no)
+		(at 82.042 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e7b3ed13-d385-4e3a-b075-b2aa73edfb38")
+	)
+	(text "MDC151-050301"
 		(exclude_from_sim no)
 		(at 180.594 112.776 0)
 		(effects
@@ -2567,7 +2644,7 @@
 	)
 	(text_box "Not in final build, since the PSU should handle overload protection."
 		(exclude_from_sim no)
-		(at 211.455 93.4228 0)
+		(at 210.82 93.4228 0)
 		(size 23.495 10.0822)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -2729,7 +2806,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 99.06) (xy 99.06 99.06)
+			(xy 64.77 99.06) (xy 99.06 99.06)
 		)
 		(stroke
 			(width 0)
@@ -2784,7 +2861,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 101.6) (xy 71.12 101.6)
+			(xy 100.33 101.6) (xy 64.77 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2817,7 +2894,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 104.14) (xy 53.34 104.14)
+			(xy 31.75 104.14) (xy 46.99 104.14)
 		)
 		(stroke
 			(width 0)
@@ -2828,7 +2905,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 96.52) (xy 53.34 96.52)
+			(xy 31.75 96.52) (xy 46.99 96.52)
 		)
 		(stroke
 			(width 0)
@@ -2872,7 +2949,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 99.06) (xy 53.34 99.06)
+			(xy 31.75 99.06) (xy 46.99 99.06)
 		)
 		(stroke
 			(width 0)
@@ -3134,7 +3211,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 101.6) (xy 53.34 101.6)
+			(xy 31.75 101.6) (xy 46.99 101.6)
 		)
 		(stroke
 			(width 0)
@@ -3176,7 +3253,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 91.44) (xy 93.98 91.44)
+			(xy 64.77 91.44) (xy 93.98 91.44)
 		)
 		(stroke
 			(width 0)
@@ -3208,7 +3285,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 93.98) (xy 71.12 93.98)
+			(xy 96.52 93.98) (xy 64.77 93.98)
 		)
 		(stroke
 			(width 0)
@@ -3285,7 +3362,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 96.52) (xy 71.12 96.52)
+			(xy 96.52 96.52) (xy 64.77 96.52)
 		)
 		(stroke
 			(width 0)
@@ -3427,7 +3504,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 88.9) (xy 91.44 88.9)
+			(xy 64.77 88.9) (xy 91.44 88.9)
 		)
 		(stroke
 			(width 0)
@@ -3569,7 +3646,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 104.14) (xy 71.12 104.14)
+			(xy 100.33 104.14) (xy 64.77 104.14)
 		)
 		(stroke
 			(width 0)
@@ -3708,7 +3785,7 @@
 		(uuid "066cbf80-9a58-4cd6-b5fd-ecc09ca91c1d")
 	)
 	(label "GND"
-		(at 38.1 104.14 0)
+		(at 31.75 104.14 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3728,7 +3805,7 @@
 		(uuid "14005fe0-6b0d-4ed8-94e8-49674e751535")
 	)
 	(label "MCU_FREEWHEEL"
-		(at 71.12 101.6 0)
+		(at 64.77 101.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3748,7 +3825,7 @@
 		(uuid "273a56d0-6dcb-4498-8ecb-b472fb3ac1f0")
 	)
 	(label "VBUS"
-		(at 53.34 96.52 180)
+		(at 46.99 96.52 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3778,7 +3855,7 @@
 		(uuid "3b843fd6-70a6-4295-82d3-03082754fd6b")
 	)
 	(label "D+"
-		(at 38.1 101.6 0)
+		(at 31.75 101.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3818,7 +3895,7 @@
 		(uuid "473a8fc0-fa6b-4990-895f-ce2f78ff9897")
 	)
 	(label "D-"
-		(at 53.34 99.06 180)
+		(at 46.99 99.06 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3828,7 +3905,7 @@
 		(uuid "474d3863-52bc-4a22-bda2-463172637b8c")
 	)
 	(label "MCU_V_CONTROL"
-		(at 71.12 91.44 0)
+		(at 64.77 91.44 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3858,7 +3935,7 @@
 		(uuid "52c2717b-f5d2-4bd9-a587-ec4cdeb5528f")
 	)
 	(label "D+"
-		(at 53.34 101.6 180)
+		(at 46.99 101.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3868,7 +3945,7 @@
 		(uuid "58baab58-6d52-4e13-89fc-48b8928fa852")
 	)
 	(label "MCU_RUNSTOP"
-		(at 71.12 104.14 0)
+		(at 64.77 104.14 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3888,7 +3965,7 @@
 		(uuid "5b1dd7c6-351d-47c6-8cd5-a7fbc7dff6d9")
 	)
 	(label "GND"
-		(at 53.34 104.14 180)
+		(at 46.99 104.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3948,7 +4025,7 @@
 		(uuid "826e3f42-0bb6-4c03-a1b2-f0dc8e3dcb79")
 	)
 	(label "GND"
-		(at 71.12 88.9 0)
+		(at 64.77 88.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3968,7 +4045,7 @@
 		(uuid "84d97af7-f99e-47fe-8a84-fd4417a231cc")
 	)
 	(label "MCU_DIR"
-		(at 71.12 99.06 0)
+		(at 64.77 99.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4018,7 +4095,7 @@
 		(uuid "95702649-494f-46ab-bf5d-bf29e0d19b00")
 	)
 	(label "MCU_PG_IN"
-		(at 71.12 93.98 0)
+		(at 64.77 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4048,7 +4125,7 @@
 		(uuid "a0334cf2-420f-400b-9d6b-e1aba39e7f56")
 	)
 	(label "D-"
-		(at 38.1 99.06 0)
+		(at 31.75 99.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4148,7 +4225,7 @@
 		(uuid "e6c16c90-26fc-49e0-873b-37b8404a0a6f")
 	)
 	(label "MCU_FAULT_IN"
-		(at 71.12 96.52 0)
+		(at 64.77 96.52 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4168,7 +4245,7 @@
 		(uuid "f2e7052a-5494-4bcd-91c2-71846cfedbb1")
 	)
 	(label "VBUS"
-		(at 38.1 96.52 0)
+		(at 31.75 96.52 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4199,7 +4276,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 33.02 101.6 180)
+		(at 26.67 101.6 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4210,7 +4287,7 @@
 		(fields_autoplaced yes)
 		(uuid "04d14a93-f588-4b01-a794-2b9f149f8683")
 		(property "Reference" "J11"
-			(at 33.02 90.17 0)
+			(at 26.67 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4220,7 +4297,7 @@
 			)
 		)
 		(property "Value" "LAPTOP"
-			(at 33.02 92.71 0)
+			(at 26.67 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4230,7 +4307,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 33.02 101.6 0)
+			(at 26.67 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4241,7 +4318,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 33.02 101.6 0)
+			(at 26.67 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4252,7 +4329,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 33.02 101.6 0)
+			(at 26.67 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4489,7 +4566,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 58.42 101.6 0)
+		(at 52.07 101.6 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -4501,7 +4578,7 @@
 		(fields_autoplaced yes)
 		(uuid "43be47cc-977c-4fce-88b7-bfd28f44ed94")
 		(property "Reference" "J10"
-			(at 58.42 90.17 0)
+			(at 52.07 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4511,7 +4588,7 @@
 			)
 		)
 		(property "Value" "MCU USB"
-			(at 58.42 92.71 0)
+			(at 52.07 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4521,7 +4598,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 58.42 101.6 0)
+			(at 52.07 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4532,7 +4609,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 101.6 0)
+			(at 52.07 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4543,7 +4620,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 58.42 101.6 0)
+			(at 52.07 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4576,7 +4653,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x07")
-		(at 66.04 96.52 180)
+		(at 59.69 96.52 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4587,7 +4664,7 @@
 		(fields_autoplaced yes)
 		(uuid "45ce898d-ec37-456a-a249-0f52f79bdf9a")
 		(property "Reference" "J7"
-			(at 66.04 82.55 0)
+			(at 59.69 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4597,7 +4674,7 @@
 			)
 		)
 		(property "Value" "MCU GPIO"
-			(at 66.04 85.09 0)
+			(at 59.69 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4607,7 +4684,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 66.04 96.52 0)
+			(at 59.69 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4618,7 +4695,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 96.52 0)
+			(at 59.69 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4629,7 +4706,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 66.04 96.52 0)
+			(at 59.69 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
