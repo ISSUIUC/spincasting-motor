@@ -1,12 +1,13 @@
-#![cfg_attr(not(test), no_std)]
-
 mod command;
 mod telemetry;
 mod wire;
 
 pub use command::{ConnectConfig, DeadmanPolicy, DesiredState, Direction, Interval, ToMcu};
 pub use telemetry::{FromMcu, HelloInfo, Telemetry};
-pub use wire::{decode, encode, WireError, MAX_FRAME_SIZE, MAX_PAYLOAD_SIZE};
+pub use wire::{
+    decode, encode, DecodeError, WireDecode, WireEncode, WireError, MAX_FRAME_SIZE,
+    MAX_PAYLOAD_SIZE,
+};
 
 #[cfg(test)]
 mod tests {
