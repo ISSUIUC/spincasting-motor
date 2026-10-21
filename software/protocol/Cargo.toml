@@ -4,8 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+byteorder = "1.5.0"
 cobs = { version = "0.5.1", default-features = false }
 crc = { version = "3.4.0", default-features = false }
-postcard = { version = "1.1.3", features = ["use-crc"] }
-serde = { version = "1.0.229", default-features = false, features = ["derive"] }
-unit-intervals = { version = "0.1.0", default-features = false, features = ["serde"] } # might want to switch away from this since it's EUPL
+unit-intervals = { version = "0.1.0", default-features = false } # might want to switch away from this since it's EUPL
