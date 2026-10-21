@@ -4,8 +4,6 @@ members = [
     "protocol"
 ]
 
-[workspace.dependencies]
-
 [profile.dev]
 opt-level = 1
 
