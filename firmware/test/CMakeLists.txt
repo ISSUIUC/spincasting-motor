@@ -9,8 +9,8 @@ find_package(Catch2 3 REQUIRED)
 
 add_executable(test_protocol
     test_protocol.cpp
-    ../protocol_wire.cpp
-    ../protocol_messages.cpp
+    ../src/protocol/wire.cpp
+    ../src/protocol/messages.cpp
 )
 target_link_libraries(test_protocol PRIVATE Catch2::Catch2WithMain)
 

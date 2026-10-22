@@ -13,8 +13,8 @@
 #include <variant>
 #include <vector>
 
-#include "../protocol_messages.h"
-#include "../protocol_wire.h"
+#include "../src/protocol/messages.h"
+#include "../src/protocol/wire.h"
 
 using namespace protocol;
 

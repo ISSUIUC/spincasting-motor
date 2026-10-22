@@ -1,4 +1,4 @@
-#include "protocol_wire.h"
+#include "wire.h"
 
 #include <cstring>
 #include <optional>

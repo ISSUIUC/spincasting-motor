@@ -1,4 +1,4 @@
-#include "protocol_messages.h"
+#include "messages.h"
 
 namespace protocol {
 

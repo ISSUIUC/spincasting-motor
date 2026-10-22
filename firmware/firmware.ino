@@ -3,8 +3,8 @@
 #include <variant>
 
 #include "motor_control.h"
-#include "protocol_messages.h"
-#include "protocol_wire.h"
+#include "src/protocol/messages.h"
+#include "src/protocol/wire.h"
 
 namespace {
 

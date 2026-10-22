@@ -1,7 +1,7 @@
 #pragma once
 #include <cstdint>
 
-#include "protocol_messages.h"
+#include "src/protocol/messages.h"
 
 namespace motor_control {
 

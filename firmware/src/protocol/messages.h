@@ -4,7 +4,7 @@
 #include <type_traits>
 #include <variant>
 
-#include "protocol_wire.h"
+#include "wire.h"
 
 namespace protocol {
 

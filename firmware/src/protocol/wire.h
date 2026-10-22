@@ -3,8 +3,8 @@
 #include <cstdint>
 #include <optional>
 
-#include "byte_span.h"
-#include "expected.h"
+#include "../core/span.h"
+#include "../core/expected.h"
 
 // protocol from MCU <-> computer communication, must be in sync with the definintion on the Rust side
 namespace protocol {
