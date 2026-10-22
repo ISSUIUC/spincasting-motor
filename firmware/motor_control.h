@@ -17,7 +17,7 @@ void poll();
 bool fault();
 uint32_t motor_pulse_count();
 
-// TODO: connect tachometer
+// TODO: connect tachometer, once wired up, needs a PulseCounter on its pin
 inline uint32_t tach_pulse_count() { return 0; }
 
 } // namespace motor_control

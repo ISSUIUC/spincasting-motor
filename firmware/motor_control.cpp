@@ -19,8 +19,30 @@ const float VCONTROL_FREQ_HZ = 2000.0;
 
 PwmOut pwmVControl(PIN_VCONTROL);
 
-bool pgLastState = LOW;
-uint32_t pgPulseCount = 0;
+// debounced rising-edge counter for a digital input pin
+class PulseCounter {
+public:
+    explicit PulseCounter(int pin) : pin_(pin) {}
+
+    void begin() { last_state_ = digitalRead(pin_); }
+
+    void poll() {
+        bool state = digitalRead(pin_);
+        if (state == HIGH && last_state_ == LOW) {
+            count_++;
+        }
+        last_state_ = state;
+    }
+
+    uint32_t count() const { return count_; }
+
+private:
+    int pin_;
+    bool last_state_ = LOW;
+    uint32_t count_ = 0;
+};
+
+PulseCounter pgCounter(PIN_PGIN);
 
 } // namespace
 
@@ -36,6 +58,7 @@ void setup() {
     digitalWrite(PIN_RUNSTOP, LOW);
 
     pwmVControl.begin(VCONTROL_FREQ_HZ, 0.0);
+    pgCounter.begin();
 }
 
 void apply(const protocol::DesiredState& state) {
@@ -51,11 +74,7 @@ void apply(const protocol::DesiredState& state) {
 }
 
 void poll() {
-    bool pgState = digitalRead(PIN_PGIN);
-    if (pgState == HIGH && pgLastState == LOW) {
-        pgPulseCount++;
-    }
-    pgLastState = pgState;
+    pgCounter.poll();
 }
 
 bool fault() {
@@ -63,7 +82,7 @@ bool fault() {
 }
 
 uint32_t motor_pulse_count() {
-    return pgPulseCount;
+    return pgCounter.count();
 }
 
 } // namespace motor_control
